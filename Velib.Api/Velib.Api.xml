@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Velib.Api</name>
+    </assembly>
+    <members>
+        <member name="M:Velib.Api.Controllers.VelibController.GetMaxDocksAvailablel">
+            <summary>
+            Retourne la station avec le plus de borne disponible et le nombre de vélos disponible
+            </summary>
+            <returns>la station avec le plus de borne disponible et le nombre de vélos disponible</returns>
+            <response code ="200">Reponse a la requete avec succes</response>
+            <response code ="500">Erreur interne du serveur</response>
+        </member>
+        <member name="M:Velib.Api.Controllers.VelibController.GetNotWorkingStation">
+            <summary>
+            Retourne le nombre de stations qui ne fonctionnent pas avec la liste de nom des stations. 
+            </summary>
+            <returns>le nombre de stations qui ne fonctionnent pas avec la liste de nom des stations</returns>
+            <response code ="200">Reponse a la requete avec succes</response>
+            <response code ="500">Erreur interne du serveur</response>
+        </member>
+        <member name="T:Velib.Api.Models.Response`1">
+            <summary>
+            La reponse
+            </summary>
+            <typeparam name="T">Les enregistrements</typeparam>
+        </member>
+        <member name="P:Velib.Api.Models.Response`1.Count">
+            <summary>
+            Le nomdre des enregistrements
+            </summary>
+        </member>
+        <member name="P:Velib.Api.Models.Response`1.Data">
+            <summary>
+            La liste des enregistrements
+            </summary>
+        </member>
+        <member name="P:Velib.Api.Models.Response`1.Status">
+            <summary>
+            Le statut de la reponse
+            </summary>
+        </member>
+        <member name="T:Velib.Api.Models.VelibAvailableReelTimeResponse">
+            <summary>
+            Vélos disponibile temps réel
+            </summary>
+        </member>
+        <member name="P:Velib.Api.Models.VelibAvailableReelTimeResponse.Name">
+            <summary>
+            Nom station
+            </summary>
+        </member>
+        <member name="P:Velib.Api.Models.VelibAvailableReelTimeResponse.StationCode">
+            <summary>
+            Identifiant de station
+            </summary>
+        </member>
+        <member name="P:Velib.Api.Models.VelibAvailableReelTimeResponse.Ebike">
+            <summary>
+            Vélos électriques disponibles
+            </summary>
+        </member>
+        <member name="P:Velib.Api.Models.VelibAvailableReelTimeResponse.Mechanical">
+            <summary>
+            Vélos mécaniques disponibles
+            </summary>
+        </member>
+        <member name="P:Velib.Api.Models.VelibAvailableReelTimeResponse.CoordonneesGeo">
+            <summary>
+            Coordonées géographiques 
+            </summary>
+        </member>
+        <member name="P:Velib.Api.Models.VelibAvailableReelTimeResponse.DueDate">
+            <summary>
+            Actualisation de la donnée
+            </summary>
+        </member>
+        <member name="P:Velib.Api.Models.VelibAvailableReelTimeResponse.Numbikesavailable">
+            <summary>
+            Nombre total vélos disponible
+            </summary>
+        </member>
+        <member name="P:Velib.Api.Models.VelibAvailableReelTimeResponse.Numdocksavailable">
+            <summary>
+            Nombre bornettes libres
+            </summary>
+        </member>
+        <member name="P:Velib.Api.Models.VelibAvailableReelTimeResponse.Capacity">
+            <summary>
+            Capacité de la station
+            </summary>
+        </member>
+        <member name="P:Velib.Api.Models.VelibAvailableReelTimeResponse.IsRenting">
+            <summary>
+            Station en fonctionnement
+            </summary>
+        </member>
+        <member name="P:Velib.Api.Models.VelibAvailableReelTimeResponse.IsInstalled">
+            <summary>
+            Borne de paiement disponible
+            </summary>
+        </member>
+        <member name="P:Velib.Api.Models.VelibAvailableReelTimeResponse.NomArrondissementCommunes">
+            <summary>
+            Nom communes équipées
+            </summary>
+        </member>
+        <member name="P:Velib.Api.Models.VelibAvailableReelTimeResponse.IsReturning">
+            <summary>
+            Retour vélib possible
+            </summary>
+        </member>
+    </members>
+</doc>
